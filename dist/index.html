@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--header start-->
+    <header class="py-4 shadow-sm bg-white">
+      <div class="container flex items-center justify-between">
+        <!--logo-->
+        <a href="#">
+          <img src="../img/logo1.png" alt="logo" class="w-16" />
+        </a>
+        <!--searchbar-->
+        <div class="w-full max-w-xl relative flex">
+          <span class="absolute left-4 top-3 text-lg text-gray-400">
+            <i class="fas fa-search"></i>
+          </span>
+          <input
+            type="text"
+            class="
+              w-full
+              border border-primary border-r-0
+              pl-12
+              py-3
+              pr-3
+              rounded-l-md
+              focus:outline-none
+            "
+            placeholder="search"
+          />
+          <button
+            class="
+              bg-primary
+              border border-primary
+              text-white
+              px-8
+              rounded-r-md
+              hover:bg-transparent hover:text-primary
+              transition
+              inline-block
+            "
+          >
+            Search
+          </button>
+        </div>
+        <!--icons-->
+        <div class="flex items-center space-x-4">
+          <a
+            href="#"
+            class="
+              text-center text-gray-700
+              hover:text-primary
+              transition
+              relative
+            "
+          >
+            <div class="text-2xl">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="text-xs leading-3">Wish List</div>
+            <span
+              class="
+                absolute
+                right-0
+                -top-1
+                w-5
+                h-5
+                rounded-full
+                items-center
+                justify-center
+                bg-primary
+                text-white
+              "
+              >5</span
+            >
+          </a>
+          <a
+            href="#"
+            class="
+              text-center text-gray-700
+              hover:text-primary
+              transition
+              relative
+            "
+          >
+            <div class="text-2xl">
+              <i class="fas fa-car-battery"></i>
+            </div>
+            <div class="text-xs leading-3">Cart</div>
+            <span
+              class="
+                absolute
+                -right-3
+                -top-1
+                w-5
+                h-5
+                rounded-full
+                items-center
+                justify-center
+                bg-primary
+                text-white
+              "
+              >5</span
+            >
+          </a>
+          <a
+            href="#"
+            class="
+              text-center text-gray-700
+              hover:text-primary
+              transition
+              relative
+            "
+          >
+            <div class="text-2xl">
+              <i class="far fa-user-circle"></i>
+            </div>
+            <div class="text-xs leading-3">Account</div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!--header end-->
+    <!--nav-->
+    <nav class="bg-gray-800">
+        <div class="container flex">
+            <!--All Category-->
+            <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
+                <span class="text-white">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <span class="capitalize ml-7 text-white">
+                    All Categories
+                </span>
+                <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-200 opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition ">
+                       <img src="../img/sofa.jpg" class="h-5 w-5 object-contain" alt="sofa">
+                       <span class="ml-6 text-gray-600 ">sofa</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition ">
+                        <img src="../img/bathroom.jpg" class="h-5 w-5 object-contain" alt="sofa">
+                        <span class="ml-6 text-gray-600 ">Bathroom</span>
+                     </a>
+                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition ">
+                        <img src="../img/office.jpg" class="h-5 w-5 object-contain" alt="sofa">
+                        <span class="ml-6 text-gray-600 ">Office</span>
+                     </a>
+                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition ">
+                        <img src="../img/outdoor.jpg" class="h-5 w-5 object-contain" alt="sofa">
+                        <span class="ml-6 text-gray-600 ">Outdoor</span>
+                     </a>
+                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition ">
+                        <img src="../img/dining.jfif" class="h-5 w-5 object-contain" alt="sofa">
+                        <span class="ml-6 text-gray-600 ">Dining</span>
+                     </a>
+                </div>
+            </div>
+            <!--All category end-->
+            <!--links-->
+            <div class="flex items-center justify-between flex-grow pl-12">
+                <div class="flex items-center space-x-6 capitalize">
+                <a href="#" class="text-gray-200 hover:text-white ">Home</a>
+                <a href="#" class="text-gray-200 hover:text-white transition">Shop</a>
+                <a href="#" class="text-gray-200 hover:text-white transition">About</a>
+                <a href="#" class="text-gray-200 hover:text-white transition">contact</a>
+
+                </div>
+                <div class="flex items-center text-gray-200 hover:text-white transition">
+                    <a href="#" class="divide-y divide-red-400">Login/</a>
+                    
+                    <a href="#">Register</a>
+
+                </div>
+            </div>
+         
+        </div>
+
+    </nav>
+
+    <!--Banner section-->
+   
+   <div class="bg-cover bg-no-repeat bg-center py-32" style="background-image:url('../img/bn.jpg');">
+    <div class="container">
+        <h1 class="text-white font-bold uppercase font-roboto text-6xl my-10">best collection for <br>
+            home decoration </h1>
+        
+        <p class="text-white">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corrupti, et quasi itaque praesentium <br> ratione vel ipsam provident expedita quidem sapiente nesciunt, ab unde. Eaque neque et ex aliquid perspiciatis.
+        </p>
+        <div class="mt-12">
+           <a href="#" class="bg-primary border-primary text-white px-8 py-3 font-medium rounded-md hover:bg-transparent hover:text-primary hover:bg-white transition"> Shop Now</a>
+        </div>
+       
+    </div>
+   </div>
+
+   <!--feature section-->
+   <div class="container py-16">
+       <div class="w-12/10 grid grid-cols-3 mx-auto gap-6 justify-center">
+            <!--single feature-->
+            <div class="border border-primary px-2 py-6 flex justify-center items-center gap-5 hover:border-green-700">
+                <img src="../img/van.jpg" class="w-12 h-12 object-cover" alt="">
+
+               
+                 <div>
+                    <h4 class="text-black font-semibold ">Free Shipping</h4>
+                    <p class="text-gray-400 text-xs"> order over $200</p>
+                 </div>
+            </div>
+            <!--single feature-->
+            <div class="border border-primary px-2 py-6 flex justify-center items-center gap-5 hover:border-green-700">
+                <img src="../img/money.jpg" class="w-12 h-12 object-cover" alt="">
+
+               
+                 <div>
+                    <h4 class="text-black font-semibold ">Free Shipping</h4>
+                    <p class="text-gray-400 text-xs"> order over $200</p>
+                 </div>
+            </div>
+            <!--single feature-->
+            <div class="border border-primary px-2 py-6 flex justify-center items-center gap-5 hover:border-green-700">
+                <img src="../img/timer.jfif" class="w-12 h-12 object-cover" alt="">
+
+               
+                 <div>
+                    <h4 class="text-black font-semibold ">Free Shipping</h4>
+                    <p class="text-gray-400 text-xs"> order over $200</p>
+                 </div>
+            </div>
+       </div>
+   </div>
+   <!--feature section end-->
+
+   <!--categories section start-->
+<div class="container py-16">
+    <h2 class="text-3xl font-medium text-gray-800 upparcase mb-6">
+        shop by category
+    </h2>
+    <div class="w-12/10 grid grid-cols-3 gap-3">
+        <!--single category-->
+
+        <div class="relative rounded-sm overflow-hidden">
+            <img src="../img/bedroom1.jpeg" class="w-full h-full" alt="">
+            <a href="#" class="absolute inset-0  text-white bg-black bg-opacity-40 flex items-center justify-center">Bedroom</a>
+
+        </div>
+
+        <!--single category-->
+
+        <div class="relative rounded-sm overflow-hidden">
+            <img src="../img/drawing.jpg" class="w-full h-full" alt="">
+            <a href="#" class="absolute inset-0  text-white bg-black bg-opacity-40 flex items-center justify-center">Drawing</a>
+
+        </div>
+
+        <!--single category-->
+
+        <div class="relative rounded-sm overflow-hidden">
+            <img src="../img/office1.jpg" class="w-full h-full" alt="">
+            <a href="#" class="absolute inset-0  text-white bg-black bg-opacity-40 flex items-center justify-center">Office</a>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="w-12/10 grid grid-cols-3 gap-3 mt-3">
+        <!--single category-->
+
+        <div class="relative rounded-sm overflow-hidden">
+            <img src="../img/outdoor.jpg" class="w-full h-full" alt="">
+            <a href="#" class="absolute inset-0  text-white bg-black bg-opacity-40 flex items-center justify-center">Outdoor</a>
+
+        </div>
+
+        <!--single category-->
+
+        <div class="relative rounded-sm overflow-hidden">
+            <img src="../img/drawing.jpg" class="w-full h-full" alt="">
+            <a href="#" class="absolute inset-0  text-white bg-black bg-opacity-40 flex items-center justify-center">Drawing</a>
+
+        </div>
+
+        <!--single category-->
+
+        <div class="relative rounded-sm overflow-hidden">
+            <img src="../img/office1.jpg" class="w-full h-full" alt="">
+            <a href="#" class="absolute inset-0  text-white bg-black bg-opacity-40 flex items-center justify-center">Dining</a>
+
+        </div>
+
+    </div>
+</div>
+   
+   <!--categpries section end-->
+
+  </body>
+</html>
