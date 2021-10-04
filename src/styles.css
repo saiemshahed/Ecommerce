@@ -12,7 +12,7 @@
         @apply font-roboto
     }
 }
-@layer components{
+@layer comp onents{
     .size-selector input:checked + label{
         @apply bg-primary text-white;
     }
