@@ -17,8 +17,8 @@
   </head>
   <body>
     <!--header start-->
-    <header class="py-4 shadow-sm bg-white">
-      <div class="container flex items-center justify-between">
+    <header class="py-4 shadow-sm bg-white ">
+      <div class="hidden sm:flex md:container items-center justify-between ">
         <!--logo-->
         <a href="#">
           <img src="../img/logo1.png" alt="logo" class="w-16" />
@@ -133,10 +133,98 @@
         </div>
       </div>
     </header>
+
+    <!--phone header menu-->
+    <header class="md:hidden py-4 shadow-sm bg-white">
+      <div class="container flex  justify-between">
+  
+        <a href="#">
+          <img src="../img/logo1.png" alt="logo" class="w-16" />
+        </a>
+
+        <!--icons-->
+        <div class="flex items-center space-x-4">
+          <a
+            href="#"
+            class="
+              text-center text-gray-700
+              hover:text-primary
+              transition
+              relative
+            "
+          >
+            <div class="text-2xl">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="text-xs leading-3">Wish List</div>
+            <span
+              class="
+                absolute
+                right-0
+                -top-1
+                w-5
+                h-5
+                rounded-full
+                items-center
+                justify-center
+                bg-primary
+                text-white
+              "
+              >5</span
+            >
+          </a>
+          <a
+            href="#"
+            class="
+              text-center text-gray-700
+              hover:text-primary
+              transition
+              relative
+            "
+          >
+            <div class="text-2xl">
+              <i class="fas fa-car-battery"></i>
+            </div>
+            <div class="text-xs leading-3">Cart</div>
+            <span
+              class="
+                absolute
+                -right-3
+                -top-1
+                w-5
+                h-5
+                rounded-full
+                items-center
+                justify-center
+                bg-primary
+                text-white
+              "
+              >5</span
+            >
+          </a>
+          <a
+            href="./account.html"
+            class="
+              text-center text-gray-700
+              hover:text-primary
+              transition
+              relative
+            "
+          >
+            <div class="text-2xl">
+              <i class="far fa-user-circle"></i>
+            </div>
+            <div class="text-xs leading-3">Account</div>
+          </a>
+        </div>
+      </header>
+
+
+
     <!--header end-->
     <!--nav-->
-    <nav class="bg-gray-800">
-        <div class="container flex">
+    <nav class="bg-gray-800 ">
+        <div class="hidden container md:flex">
             <!--All Category-->
             <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
                 <span class="text-white">
@@ -170,12 +258,12 @@
             </div>
             <!--All category end-->
             <!--links-->
-            <div class="flex items-center justify-between flex-grow pl-12">
-                <div class="flex items-center space-x-6 capitalize">
-                <a href="index.html" class="text-gray-200 hover:text-white ">Home</a>
-                <a href="./dist/shop.html" class="text-gray-200 hover:text-white transition">Shop</a>
-                <a href="./dist/view.html" class="text-gray-200 hover:text-white transition">About</a>
-                <a href="./dist/contact.html" class="text-gray-200 hover:text-white transition">contact</a>
+            <div class="hidden md:flex items-center justify-between flex-grow pl-12">
+                <div class="flex flex-col md:flex-row items-center space-x-6 capitalize">
+                  <a href="index.html" class="text-gray-200 hover:text-white ">Home</a>
+                  <a href="./dist/shop.html" class="text-gray-200 hover:text-white transition">Shop</a>
+                  <a href="./dist/view.html" class="text-gray-200 hover:text-white transition">About</a>
+                  <a href="./dist/contact.html" class="text-gray-200 hover:text-white transition">contact</a>
 
                 </div>
                 <div class="flex items-center text-gray-200 hover:text-white transition">
@@ -187,14 +275,103 @@
             </div>
          
         </div>
+          <!--phone nav bar menu-->
+
+    
+      <!-- <div class="md:hidden px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
+          <span class="text-white">
+            <i class="fas fa-bars"></i>
+          </span>
+          <span class="capitalize ml-7 ">
+            all icons
+          </span>
+          <div class="absolute w-full left-0 top-full bg-white text-black shadow-md py-3 opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
+            <a href="index.html" class="text-gray-200 hover:text-white ">Home</a>
+                      <a href="./dist/shop.html" class="text-gray-200 hover:text-white transition">Shop</a>
+                      <a href="./dist/view.html" class="text-gray-200 hover:text-white transition">About</a>
+                      <a href="./dist/contact.html" class="text-gray-200 hover:text-white transition">contact</a>
+          </div>
+        </div> -->
+
 
     </nav>
 
+
+
+
+    <!--phone navbar-->
+
+    <nav class="bg-gray-800 sm:hidden">
+      <div class="container flex gap-x-2">
+          <!--All Category-->
+          <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
+            <span class="text-white">
+                <i class="fas fa-bars"></i>
+            </span>
+            <span class="capitalize ml-7 text-white">
+                All Categories
+            </span>
+            <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-200 opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
+                <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition ">
+                   <img src="../img/sofa.jpg" class="h-5 w-5 object-contain" alt="sofa">
+                   <span class="ml-6 text-gray-600 ">sofa</span>
+                </a>
+                <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition ">
+                    <img src="../img/bathroom.jpg" class="h-5 w-5 object-contain" alt="sofa">
+                    <span class="ml-6 text-gray-600 ">Bathroom</span>
+                 </a>
+                 <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition ">
+                    <img src="../img/office.jpg" class="h-5 w-5 object-contain" alt="sofa">
+                    <span class="ml-6 text-gray-600 ">Office</span>
+                 </a>
+                 <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition ">
+                    <img src="../img/outdoor.jpg" class="h-5 w-5 object-contain" alt="sofa">
+                    <span class="ml-6 text-gray-600 ">Outdoor</span>
+                 </a>
+                 <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition ">
+                    <img src="../img/dining.jfif" class="h-5 w-5 object-contain" alt="sofa">
+                    <span class="ml-6 text-gray-600 ">Dining</span>
+                 </a>
+            </div>
+        </div>
+          <!--All category end-->
+          <!--links-->
+          <div class="md:hidden px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
+            <span class="text-white">
+              <i class="fas fa-bars"></i>
+            </span>
+            <span class="capitalize ml-7 ">
+              all icons
+            </span>
+            <div class="absolute w-full left-0 top-full bg-white text-black shadow-md py-3 opacity-100 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
+              <a href="index.html" class="text-gray-200 hover:text-white ">Home</a>
+                        <a href="./dist/shop.html" class="text-gray-200 hover:text-white transition">Shop</a>
+                        <a href="./dist/view.html" class="text-gray-200 hover:text-white transition">About</a>
+                        <a href="./dist/contact.html" class="text-gray-200 hover:text-white transition">contact</a>
+            </div>
+          </div>
+
+
+          
+       
+      </div>
+        <!--phone nav bar menu-->
+
+  
+   
+
+
+  </nav>
+
+
+
+  
+
     <!--Banner section-->
    
-   <div class="bg-cover bg-no-repeat bg-center py-32" style="background-image:url('../img/bn.jpg');">
+   <div class="bg-cover bg-no-repeat bg-center py-32 " style="background-image:url('../img/bn.jpg');">
     <div class="container">
-        <h1 class="text-white font-bold uppercase font-roboto text-6xl my-10">best collection for <br>
+        <h1 class="text-white font-bold uppercase font-roboto text-2xl sm:text-6xl my-10">best collection for <br>
             home decoration </h1>
         
         <p class="text-white">
@@ -209,7 +386,7 @@
 
    <!--feature section-->
    <div class="container py-16">
-       <div class="w-12/10 grid grid-cols-3 mx-auto gap-6 justify-center">
+       <div class="w-10/12 grid md:grid-cols-3 mx-auto gap-6 justify-center">
             <!--single feature-->
             <div class="border border-primary px-2 py-6 flex justify-center items-center gap-5 hover:border-green-700">
                 <img src="../img/van.jpg" class="w-12 h-12 object-cover" alt="">
@@ -249,7 +426,7 @@
     <h2 class="text-3xl font-medium text-gray-800 upparcase mb-6">
         shop by category
     </h2>
-    <div class="w-12/10 grid grid-cols-3 gap-3">
+    <div class="w-12/10 grid md:grid-cols-3 gap-3">
         <!--single category-->
 
         <div class="relative rounded-sm overflow-hidden">
@@ -278,7 +455,7 @@
 
 
 
-    <div class="w-12/10 grid grid-cols-3 gap-3 mt-3">
+    <div class="w-12/10 grid md:grid-cols-3 gap-3 mt-3">
         <!--single category-->
 
         <div class="relative rounded-sm overflow-hidden">
@@ -313,7 +490,7 @@
       <h2 class="text-2xl  font-medium uppercase mb-4">top new arrival</h2>
 
       <!--grid part-->
-      <div class="grid grid-cols-4 gap-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
          <!--single products-->
         <div class="bg-white shadow rounded overflow-hidden">
           <div class="relative">

@@ -18,7 +18,7 @@
   <body>
     <!--header start-->
     <header class="py-4 shadow-sm bg-white">
-      <div class="container flex items-center justify-between">
+      <div class="container hidden sm:flex items-center justify-between">
         <!--logo-->
         <a href="#">
           <img src="../img/logo1.png" alt="logo" class="w-16" />
@@ -133,10 +133,96 @@
         </div>
       </div>
     </header>
+
+     <!--phone header menu-->
+     <header class="md:hidden py-4 shadow-sm bg-white">
+      <div class="container flex  justify-between">
+  
+        <a href="#">
+          <img src="../img/logo1.png" alt="logo" class="w-16" />
+        </a>
+
+        <!--icons-->
+        <div class="flex items-center space-x-4">
+          <a
+            href="#"
+            class="
+              text-center text-gray-700
+              hover:text-primary
+              transition
+              relative
+            "
+          >
+            <div class="text-2xl">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="text-xs leading-3">Wish List</div>
+            <span
+              class="
+                absolute
+                right-0
+                -top-1
+                w-5
+                h-5
+                rounded-full
+                items-center
+                justify-center
+                bg-primary
+                text-white
+              "
+              >5</span
+            >
+          </a>
+          <a
+            href="#"
+            class="
+              text-center text-gray-700
+              hover:text-primary
+              transition
+              relative
+            "
+          >
+            <div class="text-2xl">
+              <i class="fas fa-car-battery"></i>
+            </div>
+            <div class="text-xs leading-3">Cart</div>
+            <span
+              class="
+                absolute
+                -right-3
+                -top-1
+                w-5
+                h-5
+                rounded-full
+                items-center
+                justify-center
+                bg-primary
+                text-white
+              "
+              >5</span
+            >
+          </a>
+          <a
+            href="./account.html"
+            class="
+              text-center text-gray-700
+              hover:text-primary
+              transition
+              relative
+            "
+          >
+            <div class="text-2xl">
+              <i class="far fa-user-circle"></i>
+            </div>
+            <div class="text-xs leading-3">Account</div>
+          </a>
+        </div>
+      </header>
+
     <!--header end-->
     <!--nav-->
     <nav class="bg-gray-800">
-        <div class="container flex">
+        <div class="hidden container sm:flex ">
             <!--All Category-->
             <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
                 <span class="text-white">
@@ -189,6 +275,75 @@
         </div>
 
     </nav>
+
+
+    
+    <!--phone navbar-->
+
+    <nav class="bg-gray-800 sm:hidden">
+      <div class="container flex gap-x-2  items-center justify-between">
+          <!--All Category-->
+          <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
+              <span class="text-white">
+                  <i class="fas fa-bars"></i>
+              </span>
+              <span class="capitalize ml-7 text-white">
+                  All Categories
+              </span>
+              <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-200 opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible z-50">
+                  <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition ">
+                     <img src="../img/sofa.jpg" class="h-5 w-5 object-contain" alt="sofa">
+                     <span class="ml-6 text-gray-600 ">sofa</span>
+                  </a>
+                  <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition ">
+                      <img src="../img/bathroom.jpg" class="h-5 w-5 object-contain" alt="sofa">
+                      <span class="ml-6 text-gray-600 ">Bathroom</span>
+                   </a>
+                   <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition ">
+                      <img src="../img/office.jpg" class="h-5 w-5 object-contain" alt="sofa">
+                      <span class="ml-6 text-gray-600 ">Office</span>
+                   </a>
+                   <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition ">
+                      <img src="../img/outdoor.jpg" class="h-5 w-5 object-contain" alt="sofa">
+                      <span class="ml-6 text-gray-600 ">Outdoor</span>
+                   </a>
+                   <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition ">
+                      <img src="../img/dining.jfif" class="h-5 w-5 object-contain" alt="sofa">
+                      <span class="ml-6 text-gray-600 ">Dining</span>
+                   </a>
+              </div>
+          </div>
+
+
+          
+
+
+          <!--All category end-->
+          <!--links-->
+          <div class="md:hidden px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
+            <span class="text-white">
+              <i class="fas fa-bars"></i>
+            </span>
+            <span class="capitalize ml-7 ">
+              all menu
+            </span>
+            <div class="absolute w-full left-0 top-full bg-white text-black shadow-md py-3 opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
+              <a href="index.html" class="text-gray-200 hover:text-white ">Home</a>
+                        <a href="./dist/shop.html" class="text-gray-200 hover:text-white transition">Shop</a>
+                        <a href="./dist/view.html" class="text-gray-200 hover:text-white transition">About</a>
+                        <a href="./dist/contact.html" class="text-gray-200 hover:text-white transition">contact</a>
+            </div>
+          </div>
+       
+      </div>
+        <!--phone nav bar menu end-->
+
+  
+   
+
+
+  </nav>
+
     <!--Breadcums-->
     <div class="container flex py-4 items-center gap-3">
         <a href="index.html" class="text-primary text-base">
@@ -203,9 +358,9 @@
 
      <!--Breadcums end-->
      <!--shop wrapper-->
-     <div class="container grid grid-cols-4 gap-6 pt-4 items-start">
+     <div class="container grid sm:grid-cols-4 gap-6 pt-4 items-start">
          <!--sidebar-->
-         <div class="col-span-1 bg-white px-4 pb-6 shadow rounded overflow-hidden">
+         <div class="col-span-3 sm:col-span-1  bg-white px-4 pb-6 shadow rounded overflow-hidden">
              <div class="divide-y divide-gray-200 space-y-5">
                  <!--category filter-->
                  <div>
@@ -356,9 +511,9 @@
          </div>
         <!--Side bar ends-->
        
-         <div class="col-span-3 bg-white px-4 pb-6 shadow rounded overflow-hidden">
+  <div class="col-span-3 bg-white px-4 pb-6 shadow rounded overflow-hidden ">
             <!--sorting-->
-           <div class="flex items-center">
+           <div class="flex items-center z-40">
             <select class="w-44 text-sm text-gray-600 px-4 py-3 border-gray-300 shadow-sm rounded focus:ring-primary focus:border-primary">
                 <option class="hover:bg-primary hover:text-white" >Default sorting</option>
                 <option >Price low-height</option>
@@ -379,59 +534,59 @@
             </div>
            </div>
 
-           <div class="grid grid-cols-3 mt-2 gap-x-2">
+        <div class="grid grid-cols-1 sm:grid-cols-3 mt-2 gap-x-2 gap-y-2">
                <!--single products-->
-         <div class="bg-white shadow rounded overflow-hidden">
-            <div class="relative">
-              <img src="../img/products4.png" class="w-full" alt="products1">
-              <div class="absolute inset-0 bg-black opacity-40 gap-2 flex justify-center items-center">
-                <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="fas fa-search"></i></a>
-                <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="far fa-heart"></i></a>
+            <div class="bg-white shadow rounded overflow-hidden">
+                <div class="relative">
+                  <img src="../img/products4.png" class="w-full" alt="products1">
+                    <div class="absolute inset-0 bg-black opacity-40 gap-2 flex justify-center items-center">
+                      <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="fas fa-search"></i></a>
+                      <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="far fa-heart"></i></a>
+                    </div>
+                </div>
+                <h2 class="upparcase font-semibold text-black mb-2 ml-2 mt-2">Jumping shoe</h2>
+                <div class="flex mb-2 ml-2">
+                  <p class="text-primary mr-3">$45.00</p>
+                  <p class="line-through text-gray-500 text-sm">$55.00</p>
+                </div>
+                <div class="flex ml-2 mb-2">
+                  <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+                  <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+                  <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+                  <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+                  <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+                  <p class="text-sm text-gray-400">(150)</p>
+                </div>
+                <button class="btn btn-wide  btn-sm w-full bg-primary border-primary hover:bg-white hover:border-primary hover:text-primary">Add to cart</button> 
+        
               </div>
-            </div>
-            <h2 class="upparcase font-semibold text-black mb-2 ml-2 mt-2">Jumping shoe</h2>
-            <div class="flex mb-2 ml-2">
-              <p class="text-primary mr-3">$45.00</p>
-              <p class="line-through text-gray-500 text-sm">$55.00</p>
-            </div>
-            <div class="flex ml-2 mb-2">
-              <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-              <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-              <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-              <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-              <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-              <p class="text-sm text-gray-400">(150)</p>
-            </div>
-            <button class="btn btn-wide  btn-sm w-full bg-primary border-primary hover:bg-white hover:border-primary hover:text-primary">Add to cart</button> 
-    
-          </div>
 
 
           <!--single products-->
-         <div class="bg-white shadow rounded overflow-hidden">
-            <div class="relative">
-              <img src="../img/products2.png" class="w-full" alt="products1">
-              <div class="absolute inset-0 bg-black opacity-40 gap-2 flex justify-center items-center">
-                <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="fas fa-search"></i></a>
-                <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="far fa-heart"></i></a>
-              </div>
-            </div>
-            <h2 class="upparcase font-semibold text-black mb-2 ml-2 mt-2">Jumping shoe</h2>
-            <div class="flex mb-2 ml-2">
-              <p class="text-primary mr-3">$45.00</p>
-              <p class="line-through text-gray-500 text-sm">$55.00</p>
-            </div>
-            <div class="flex ml-2 mb-2">
-              <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-              <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-              <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-              <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-              <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-              <p class="text-sm text-gray-400">(150)</p>
-            </div>
-            <button class="btn btn-wide  btn-sm w-full bg-primary border-primary hover:bg-white hover:border-primary hover:text-primary">Add to cart</button> 
-    
-          </div>
+              <div class="bg-white shadow rounded overflow-hidden">
+                  <div class="relative">
+                    <img src="../img/products2.png" class="w-full" alt="products1">
+                    <div class="absolute inset-0 bg-black opacity-40 gap-2 flex justify-center items-center">
+                      <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="fas fa-search"></i></a>
+                      <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="far fa-heart"></i></a>
+                    </div>
+                  </div>
+                  <h2 class="upparcase font-semibold text-black mb-2 ml-2 mt-2">Jumping shoe</h2>
+                  <div class="flex mb-2 ml-2">
+                    <p class="text-primary mr-3">$45.00</p>
+                    <p class="line-through text-gray-500 text-sm">$55.00</p>
+                  </div>
+                  <div class="flex ml-2 mb-2">
+                    <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+                    <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+                    <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+                    <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+                    <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+                    <p class="text-sm text-gray-400">(150)</p>
+                  </div>
+                  <button class="btn btn-wide  btn-sm w-full bg-primary border-primary hover:bg-white hover:border-primary hover:text-primary">Add to cart</button> 
+          
+                </div>
 
 
           <!--single products-->
@@ -459,34 +614,34 @@
             <button class="btn btn-wide  btn-sm w-full bg-primary border-primary hover:bg-white hover:border-primary hover:text-primary">Add to cart</button> 
     
           </div>
-           </div>
+        </div>
 
 
 
 
-           <div class="grid grid-cols-3 mt-2 gap-x-2">
+   <div class="grid grid-cols-1 sm:grid-cols-3 mt-2 gap-x-2 gap-y-2">
             <!--single products-->
       <div class="bg-white shadow rounded overflow-hidden">
-         <div class="relative">
-           <img src="../img/sofa.jpg" class="w-full" alt="products1">
-           <div class="absolute inset-0 bg-black opacity-40 gap-2 flex justify-center items-center">
-             <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="fas fa-search"></i></a>
-             <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="far fa-heart"></i></a>
-           </div>
-         </div>
+              <div class="relative">
+                <img src="../img/sofa.jpg" class="w-full" alt="products1">
+                <div class="absolute inset-0 bg-black opacity-40 gap-2 flex justify-center items-center">
+                  <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="fas fa-search"></i></a>
+                  <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="far fa-heart"></i></a>
+                </div>
+              </div>
          <h2 class="upparcase font-semibold text-black mb-2 ml-2 mt-2">Jumping shoe</h2>
-         <div class="flex mb-2 ml-2">
-           <p class="text-primary mr-3">$45.00</p>
-           <p class="line-through text-gray-500 text-sm">$55.00</p>
-         </div>
-         <div class="flex ml-2 mb-2">
-           <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-           <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-           <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-           <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-           <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-           <p class="text-sm text-gray-400">(150)</p>
-         </div>
+              <div class="flex mb-2 ml-2">
+                <p class="text-primary mr-3">$45.00</p>
+                <p class="line-through text-gray-500 text-sm">$55.00</p>
+              </div>
+              <div class="flex ml-2 mb-2">
+                <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+                <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+                <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+                <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+                <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+                <p class="text-sm text-gray-400">(150)</p>
+              </div>
          <button class="btn btn-wide  btn-sm w-full bg-primary border-primary hover:bg-white hover:border-primary hover:text-primary">Add to cart</button> 
  
        </div>
@@ -494,26 +649,26 @@
 
        <!--single products-->
       <div class="bg-white shadow rounded overflow-hidden">
-         <div class="relative">
-           <img src="../img/sofa.jpg" class="w-full" alt="products1">
-           <div class="absolute inset-0 bg-black opacity-40 gap-2 flex justify-center items-center">
-             <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="fas fa-search"></i></a>
-             <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="far fa-heart"></i></a>
-           </div>
-         </div>
+            <div class="relative">
+              <img src="../img/sofa.jpg" class="w-full" alt="products1">
+              <div class="absolute inset-0 bg-black opacity-40 gap-2 flex justify-center items-center">
+                <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="fas fa-search"></i></a>
+                <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="far fa-heart"></i></a>
+              </div>
+            </div>
          <h2 class="upparcase font-semibold text-black mb-2 ml-2 mt-2">Jumping shoe</h2>
-         <div class="flex mb-2 ml-2">
-           <p class="text-primary mr-3">$45.00</p>
-           <p class="line-through text-gray-500 text-sm">$55.00</p>
-         </div>
-         <div class="flex ml-2 mb-2">
-           <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-           <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-           <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-           <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-           <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-           <p class="text-sm text-gray-400">(150)</p>
-         </div>
+            <div class="flex mb-2 ml-2">
+              <p class="text-primary mr-3">$45.00</p>
+              <p class="line-through text-gray-500 text-sm">$55.00</p>
+            </div>
+            <div class="flex ml-2 mb-2">
+              <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+              <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+              <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+              <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+              <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+              <p class="text-sm text-gray-400">(150)</p>
+            </div>
          <button class="btn btn-wide  btn-sm w-full bg-primary border-primary hover:bg-white hover:border-primary hover:text-primary">Add to cart</button> 
  
        </div>
@@ -544,11 +699,11 @@
          <button class="btn btn-wide  btn-sm w-full bg-primary border-primary hover:bg-white hover:border-primary hover:text-primary">Add to cart</button> 
  
        </div>
-        </div>
+    </div>
 
            
             
-         </div>
+</div>
 
      
 
@@ -563,119 +718,119 @@
         </div>
 
 
-        <!--recomand section-->]
+        <!--recomand section-->
 
 <div class="container mb-5">
   <h3 class="text-black text-3xl uppercase">recomanded for you</h3>
-  <div class="grid grid-cols-3 mt-2 gap-x-2">
+  <div class="grid grid-cols-1 sm:grid-cols-3 mt-2 gap-x-2 gap-y-2 m-2">
     <!--single products-->
-<div class="bg-white shadow rounded overflow-hidden">
- <div class="relative">
-   <img src="../img/products4.png" class="w-full" alt="products1">
-   <div class="absolute inset-0 bg-black opacity-40 gap-2 flex justify-center items-center">
-     <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="fas fa-search"></i></a>
-     <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="far fa-heart"></i></a>
-   </div>
- </div>
- <h2 class="upparcase font-semibold text-black mb-2 ml-2 mt-2">Jumping shoe</h2>
- <div class="flex mb-2 ml-2">
-   <p class="text-primary mr-3">$45.00</p>
-   <p class="line-through text-gray-500 text-sm">$55.00</p>
- </div>
- <div class="flex ml-2 mb-2">
-   <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-   <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-   <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-   <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-   <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-   <p class="text-sm text-gray-400">(150)</p>
- </div>
- <button class="btn btn-wide  btn-sm w-full bg-primary border-primary hover:bg-white hover:border-primary hover:text-primary">Add to cart</button> 
+    <div class="bg-white shadow rounded overflow-hidden">
+        <div class="relative">
+          <img src="../img/products4.png" class="w-full" alt="products1">
+          <div class="absolute inset-0 bg-black opacity-40 gap-2 flex justify-center items-center">
+            <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="fas fa-search"></i></a>
+            <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="far fa-heart"></i></a>
+          </div>
+        </div>
+        <h2 class="upparcase font-semibold text-black mb-2 ml-2 mt-2">Jumping shoe</h2>
+        <div class="flex mb-2 ml-2">
+          <p class="text-primary mr-3">$45.00</p>
+          <p class="line-through text-gray-500 text-sm">$55.00</p>
+        </div>
+        <div class="flex ml-2 mb-2">
+          <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+          <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+          <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+          <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+          <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+          <p class="text-sm text-gray-400">(150)</p>
+        </div>
+        <button class="btn btn-wide  btn-sm w-full bg-primary border-primary hover:bg-white hover:border-primary hover:text-primary">Add to cart</button> 
 
-</div>
-
-
-<!--single products-->
-<div class="bg-white shadow rounded overflow-hidden">
- <div class="relative">
-   <img src="../img/products2.png" class="w-full" alt="products1">
-   <div class="absolute inset-0 bg-black opacity-40 gap-2 flex justify-center items-center">
-     <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="fas fa-search"></i></a>
-     <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="far fa-heart"></i></a>
-   </div>
- </div>
- <h2 class="upparcase font-semibold text-black mb-2 ml-2 mt-2">Jumping shoe</h2>
- <div class="flex mb-2 ml-2">
-   <p class="text-primary mr-3">$45.00</p>
-   <p class="line-through text-gray-500 text-sm">$55.00</p>
- </div>
- <div class="flex ml-2 mb-2">
-   <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-   <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-   <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-   <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-   <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-   <p class="text-sm text-gray-400">(150)</p>
- </div>
- <button class="btn btn-wide  btn-sm w-full bg-primary border-primary hover:bg-white hover:border-primary hover:text-primary">Add to cart</button> 
-
-</div>
+    </div>
 
 
 <!--single products-->
-<div class="bg-white shadow rounded overflow-hidden ">
- <div class="relative">
-   <img src="../img/products2.png" class="w-full" alt="products1">
-   <div class="absolute inset-0 bg-black opacity-40 gap-2 flex justify-center items-center">
-     <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="fas fa-search"></i></a>
-     <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="far fa-heart"></i></a>
-   </div>
- </div>
- <h2 class="upparcase font-semibold text-black mb-2 ml-2 mt-2">Jumping shoe</h2>
- <div class="flex mb-2 ml-2">
-   <p class="text-primary mr-3">$45.00</p>
-   <p class="line-through text-gray-500 text-sm">$55.00</p>
- </div>
- <div class="flex ml-2 mb-2">
-   <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-   <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-   <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-   <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-   <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-   <p class="text-sm text-gray-400">(150)</p>
- </div>
- <button class="btn btn-wide  btn-sm w-full bg-primary border-primary hover:bg-white hover:border-primary hover:text-primary">Add to cart</button> 
+        <div class="bg-white shadow rounded overflow-hidden">
+            <div class="relative">
+              <img src="../img/products2.png" class="w-full" alt="products1">
+              <div class="absolute inset-0 bg-black opacity-40 gap-2 flex justify-center items-center">
+                <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="fas fa-search"></i></a>
+                <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="far fa-heart"></i></a>
+              </div>
+            </div>
+           <h2 class="upparcase font-semibold text-black mb-2 ml-2 mt-2">Jumping shoe</h2>
+            <div class="flex mb-2 ml-2">
+              <p class="text-primary mr-3">$45.00</p>
+              <p class="line-through text-gray-500 text-sm">$55.00</p>
+            </div>
+            <div class="flex ml-2 mb-2">
+              <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+              <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+              <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+              <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+              <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+              <p class="text-sm text-gray-400">(150)</p>
+            </div>
+            <button class="btn btn-wide  btn-sm w-full bg-primary border-primary hover:bg-white hover:border-primary hover:text-primary">Add to cart</button> 
 
+        </div>
+
+
+<!--single products-->
+      <div class="bg-white shadow rounded overflow-hidden ">
+          <div class="relative">
+            <img src="../img/products2.png" class="w-full" alt="products1">
+            <div class="absolute inset-0 bg-black opacity-40 gap-2 flex justify-center items-center">
+              <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="fas fa-search"></i></a>
+              <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="far fa-heart"></i></a>
+            </div>
+          </div>
+          <h2 class="upparcase font-semibold text-black mb-2 ml-2 mt-2">Jumping shoe</h2>
+          <div class="flex mb-2 ml-2">
+            <p class="text-primary mr-3">$45.00</p>
+            <p class="line-through text-gray-500 text-sm">$55.00</p>
+          </div>
+          <div class="flex ml-2 mb-2">
+            <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+            <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+            <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+            <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+            <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+            <p class="text-sm text-gray-400">(150)</p>
+          </div>
+          <button class="btn btn-wide  btn-sm w-full bg-primary border-primary hover:bg-white hover:border-primary hover:text-primary">Add to cart</button> 
+
+      </div>
 </div>
-</div>
 
 
 
 
-<div class="grid grid-cols-3 mt-2 gap-x-2">
+<div class="grid grid-cols-1 sm:grid-cols-3 mt-2 gap-x-2 gap-y-2 m-2">
  <!--single products-->
 <div class="bg-white shadow rounded overflow-hidden">
-<div class="relative">
-<img src="../img/sofa.jpg" class="w-full" alt="products1">
-<div class="absolute inset-0 bg-black opacity-40 gap-2 flex justify-center items-center">
-  <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="fas fa-search"></i></a>
-  <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="far fa-heart"></i></a>
-</div>
-</div>
-<h2 class="upparcase font-semibold text-black mb-2 ml-2 mt-2">Jumping shoe</h2>
-<div class="flex mb-2 ml-2">
-<p class="text-primary mr-3">$45.00</p>
-<p class="line-through text-gray-500 text-sm">$55.00</p>
-</div>
-<div class="flex ml-2 mb-2">
-<a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-<a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-<a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-<a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-<a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
-<p class="text-sm text-gray-400">(150)</p>
-</div>
-<button class="btn btn-wide  btn-sm w-full bg-primary border-primary hover:bg-white hover:border-primary hover:text-primary">Add to cart</button> 
+    <div class="relative">
+    <img src="../img/sofa.jpg" class="w-full" alt="products1">
+        <div class="absolute inset-0 bg-black opacity-40 gap-2 flex justify-center items-center">
+          <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="fas fa-search"></i></a>
+          <a href="#" class="text-white text-lg w-8 h-8 rounded-full pl-2 pt-1 bg-primary hover:bg-gray-800 transition"><i class="far fa-heart"></i></a>
+        </div>
+    </div>
+    <h2 class="upparcase font-semibold text-black mb-2 ml-2 mt-2">Jumping shoe</h2>
+        <div class="flex mb-2 ml-2">
+          <p class="text-primary mr-3">$45.00</p>
+          <p class="line-through text-gray-500 text-sm">$55.00</p>
+        </div>
+    <div class="flex ml-2 mb-2">
+    <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+    <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+    <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+    <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+    <a href="#"><i class="far fa-star text-yellow-400 h-6 w-6 "></i></a>
+    <p class="text-sm text-gray-400">(150)</p>
+    </div>
+    <button class="btn btn-wide  btn-sm w-full bg-primary border-primary hover:bg-white hover:border-primary hover:text-primary">Add to cart</button> 
 
 </div>
 
